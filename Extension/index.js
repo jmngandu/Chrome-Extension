@@ -5,8 +5,8 @@ const listEl = document.querySelector('.list-el');
 
 btnEL.addEventListener('click', () => {
 	myLinks.push(linkEl.value);
-});
 
-for (let i = 0; i < myLinks.length; i++) {
-	listEl.innerHTML += myLinks[i] + ' ';
-}
+	for (let i = 0; i < myLinks.length; i++) {
+		listEl.innerHTML += '<li>' + myLinks[i] + '</li>';
+	}
+});
