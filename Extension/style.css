@@ -11,10 +11,17 @@ body {
 	padding: 5px 20px;
 	background-color: lightgreen;
 	border: none;
+	margin: 10px;
 }
 .link-el {
+	margin: 10px;
 	padding: 5px 10px;
 }
 .btn-el:hover {
 	background-color: lightcoral;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
