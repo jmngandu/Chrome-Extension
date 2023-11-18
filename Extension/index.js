@@ -15,7 +15,11 @@ renderMylinks = () => {
 		theList +=
 			// '<li><a target="_blank" href="' +myLinks[i] + '">' + myLinks[i] + '</a></li>';
 
-			theList += `<li><a target="_blank" href="${myLinks[i]}"> ${myLinks[i]} </a></li>`;
+			theList += `
+				<li>
+					<a target="_blank"href="${myLinks[i]}"> 
+					${myLinks[i]} </a>
+				</li>`;
 
 		// const li = document.createElement('li');
 		// li.textContent = myLinks[i];
