@@ -6,6 +6,7 @@
 body {
 	background-color: ghostwhite;
 	text-align: center;
+	min-width: 400px;
 }
 .btn-el {
 	padding: 5px 20px;
