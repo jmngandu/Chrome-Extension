@@ -17,6 +17,15 @@ body {
 	margin: 10px;
 	padding: 5px 10px;
 }
+li {
+	list-style-type: none;
+	text-align: start;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
 .btn-el:hover {
 	background-color: lightcoral;
 }
