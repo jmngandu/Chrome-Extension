@@ -5,13 +5,14 @@ const listEl = document.querySelector('.list-el');
 
 btnEL.addEventListener('click', () => {
 	myLinks.push(linkEl.value);
+	linkEl.value = '';
 	renderMylinks();
 });
 
 renderMylinks = () => {
 	let theList = '';
 	for (let i = 0; i < myLinks.length; i++) {
-		theList += '<li>' + myLinks[i] + '</li>';
+		theList += '<li><a href="#">' + myLinks[i] + '</a></li>';
 		// const li = document.createElement('li');
 		// li.textContent = myLinks[i];
 		// listEl.append(li);
