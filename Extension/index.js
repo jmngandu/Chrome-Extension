@@ -12,7 +12,7 @@ btnEL.addEventListener('click', () => {
 renderMylinks = () => {
 	let theList = '';
 	for (let i = 0; i < myLinks.length; i++) {
-		theList += '<li><a href="#">' + myLinks[i] + '</a></li>';
+		theList += '<li><a href="' + myLinks[i] + '">' + myLinks[i] + '</a></li>';
 		// const li = document.createElement('li');
 		// li.textContent = myLinks[i];
 		// listEl.append(li);
