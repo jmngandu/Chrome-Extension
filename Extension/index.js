@@ -12,7 +12,6 @@ if (linksFromLocalStorage) {
 }
 
 btnDel.addEventListener('dblclick', function () {
-	console.log('double clicked!');
 	localStorage.clear();
 	myLinks = [];
 	renderMylinks();
