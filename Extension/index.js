@@ -2,9 +2,8 @@ let myLinks = [];
 const linkEl = document.querySelector('.link-el');
 const btnEL = document.querySelector('.btn-el');
 const listEl = document.querySelector('.list-el');
-
 let linksFromLocalStorage = JSON.parse(localStorage.getItem('myLinks'));
-console.log(linksFromLocalStorage);
+
 if (linksFromLocalStorage) {
 	myLinks = linksFromLocalStorage;
 	renderMylinks();

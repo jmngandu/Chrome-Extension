@@ -8,7 +8,11 @@ body {
 	text-align: center;
 	min-width: 400px;
 }
-.btn-el {
+.button-el {
+	display: flex;
+}
+.btn-el,
+.btn-del {
 	padding: 5px 20px;
 	background-color: lightgreen;
 	border: none;
@@ -29,6 +33,9 @@ a {
 }
 .btn-el:hover {
 	background-color: lightcoral;
+}
+.btn-del:hover {
+	background-color: crimson;
 }
 .container {
 	display: flex;
