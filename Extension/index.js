@@ -3,12 +3,18 @@ const linkEl = document.querySelector('.link-el');
 const btnEL = document.querySelector('.btn-el');
 const listEl = document.querySelector('.list-el');
 
+let linksFromLocalStorage = JSON.parse(localStorage.getItem('myLinks'));
+if (linksFromLocalStorage) {
+	myLinks = linksFromLocalStorage;
+	renderMylinks();
+}
+
 btnEL.addEventListener('click', () => {
 	myLinks.push(linkEl.value);
 	linkEl.value = '';
 
 	localStorage.setItem('myLinks', JSON.stringify(myLinks));
-	console.log(localStorage.getItem('myLinks'));
+
 	renderMylinks();
 });
 
