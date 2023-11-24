@@ -18,6 +18,9 @@ body {
 	border: none;
 	margin: 10px;
 }
+.btn-del {
+	background-color: darksalmon;
+}
 .link-el {
 	margin: 10px;
 	padding: 5px 10px;
