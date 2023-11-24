@@ -3,7 +3,7 @@ const linkEl = document.querySelector('.link-el');
 const btnEL = document.querySelector('.btn-el');
 const listEl = document.querySelector('.list-el');
 const btnDel = document.getElementById('btn-del');
-let linksFromLocalStorage = JSON.parse(localStorage.getItem('myLinks'));
+const linksFromLocalStorage = JSON.parse(localStorage.getItem('myLinks'));
 
 if (linksFromLocalStorage) {
 	myLinks = linksFromLocalStorage;
