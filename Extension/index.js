@@ -6,6 +6,8 @@ const listEl = document.querySelector('.list-el');
 btnEL.addEventListener('click', () => {
 	myLinks.push(linkEl.value);
 	linkEl.value = '';
+
+	localStorage.setItem('myLinks', JSON.stringify(myLinks));
 	renderMylinks();
 });
 
@@ -27,3 +29,11 @@ renderMylinks = () => {
 	}
 	listEl.innerHTML = theList;
 };
+let myLeads = `["www.awesomelead.com"]`;
+myLeads = JSON.parse(myLeads);
+
+myLeads.push('www.lead2.com');
+
+myLeads = JSON.stringify(myLeads);
+
+console.log(typeof myLeads);
