@@ -10,6 +10,10 @@ if (linksFromLocalStorage) {
 	renderMylinks();
 }
 
+btnBtn.addEventListener('dblclick', function () {
+	console.log('double clicked!');
+});
+
 btnEL.addEventListener('click', () => {
 	myLinks.push(linkEl.value);
 	linkEl.value = '';
@@ -22,10 +26,9 @@ btnEL.addEventListener('click', () => {
 renderMylinks = () => {
 	let theList = '';
 	for (let i = 0; i < myLinks.length; i++) {
-		theList +=
-			// '<li><a target="_blank" href="' +myLinks[i] + '">' + myLinks[i] + '</a></li>';
+		// '<li><a target="_blank" href="' +myLinks[i] + '">' + myLinks[i] + '</a></li>';
 
-			theList += `
+		theList += `
 				<li>
 					<a target="_blank"href="${myLinks[i]}"> 
 					${myLinks[i]} </a>
