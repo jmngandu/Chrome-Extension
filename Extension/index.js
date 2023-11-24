@@ -2,7 +2,8 @@ let myLinks = [];
 const linkEl = document.querySelector('.link-el');
 const btnEL = document.querySelector('.btn-el');
 const listEl = document.querySelector('.list-el');
-const btnDel = document.getElementById('btn-del');
+const btnDel = document.querySelector('.btn-del');
+console.log(btnDel);
 const linksFromLocalStorage = JSON.parse(localStorage.getItem('myLinks'));
 
 if (linksFromLocalStorage) {
@@ -10,7 +11,7 @@ if (linksFromLocalStorage) {
 	renderMylinks();
 }
 
-btnBtn.addEventListener('dblclick', function () {
+btnDel.addEventListener('dblclick', function () {
 	console.log('double clicked!');
 });
 
