@@ -8,6 +8,7 @@ btnEL.addEventListener('click', () => {
 	linkEl.value = '';
 
 	localStorage.setItem('myLinks', JSON.stringify(myLinks));
+	console.log(localStorage.getItem('myLinks'));
 	renderMylinks();
 });
 
