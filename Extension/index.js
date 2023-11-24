@@ -11,21 +11,6 @@ if (linksFromLocalStorage) {
 	renderMylinks();
 }
 
-btnDel.addEventListener('dblclick', function () {
-	localStorage.clear();
-	myLinks = [];
-	renderMylinks();
-});
-
-btnEL.addEventListener('click', () => {
-	myLinks.push(linkEl.value);
-	linkEl.value = '';
-
-	localStorage.setItem('myLinks', JSON.stringify(myLinks));
-
-	renderMylinks();
-});
-
 renderMylinks = () => {
 	let theList = '';
 	for (let i = 0; i < myLinks.length; i++) {
@@ -43,3 +28,18 @@ renderMylinks = () => {
 	}
 	listEl.innerHTML = theList;
 };
+
+btnDel.addEventListener('dblclick', function () {
+	localStorage.clear();
+	myLinks = [];
+	renderMylinks();
+});
+
+btnEL.addEventListener('click', () => {
+	myLinks.push(linkEl.value);
+	linkEl.value = '';
+
+	localStorage.setItem('myLinks', JSON.stringify(myLinks));
+
+	renderMylinks();
+});
