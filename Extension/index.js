@@ -14,17 +14,11 @@ if (linksFromLocalStorage) {
 function renderMylinks(links) {
 	let theList = '';
 	for (let i = 0; i < links.length; i++) {
-		// '<li><a target="_blank" href="' +myLinks[i] + '">' + myLinks[i] + '</a></li>';
-
 		theList += `
 				<li>
 					<a target="_blank"href="${links[i]}"> 
 					${links[i]} </a>
 				</li>`;
-
-		// const li = document.createElement('li');
-		// li.textContent = myLinks[i];
-		// listEl.append(li);
 	}
 	listEl.innerHTML = theList;
 }
