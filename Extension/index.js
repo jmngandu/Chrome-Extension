@@ -8,10 +8,10 @@ const linksFromLocalStorage = JSON.parse(localStorage.getItem('myLinks'));
 
 if (linksFromLocalStorage) {
 	myLinks = linksFromLocalStorage;
-	renderMylinks(myLinks);
+	render(myLinks);
 }
 
-function renderMylinks(links) {
+function render(links) {
 	let theList = '';
 	for (let i = 0; i < links.length; i++) {
 		theList += `
