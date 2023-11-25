@@ -11,7 +11,7 @@ if (linksFromLocalStorage) {
 	renderMylinks(myLinks);
 }
 
-renderMylinks = (links) => {
+function renderMylinks(links) {
 	let theList = '';
 	for (let i = 0; i < links.length; i++) {
 		// '<li><a target="_blank" href="' +myLinks[i] + '">' + myLinks[i] + '</a></li>';
@@ -27,7 +27,7 @@ renderMylinks = (links) => {
 		// listEl.append(li);
 	}
 	listEl.innerHTML = theList;
-};
+}
 
 btnDel.addEventListener('dblclick', function () {
 	localStorage.clear();
