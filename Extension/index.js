@@ -26,7 +26,7 @@ function render(links) {
 btnDel.addEventListener('dblclick', function () {
 	localStorage.clear();
 	myLinks = [];
-	render();
+	render(myLinks);
 });
 
 btnEL.addEventListener('click', () => {
