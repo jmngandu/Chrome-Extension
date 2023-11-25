@@ -8,16 +8,16 @@ const linksFromLocalStorage = JSON.parse(localStorage.getItem('myLinks'));
 
 if (linksFromLocalStorage) {
 	myLinks = linksFromLocalStorage;
-	renderMylinks(myLinks);
+	renderMylinks();
 }
 
-function renderMylinks(links) {
+function renderMylinks() {
 	let theList = '';
-	for (let i = 0; i < links.length; i++) {
+	for (let i = 0; i < myLinks.length; i++) {
 		theList += `
 				<li>
-					<a target="_blank"href="${links[i]}"> 
-					${links[i]} </a>
+					<a target="_blank"href="${myLinks[i]}"> 
+					${myLinks[i]} </a>
 				</li>`;
 	}
 	listEl.innerHTML = theList;
