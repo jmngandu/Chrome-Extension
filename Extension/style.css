@@ -10,8 +10,7 @@ body {
 }
 .button-el {
 	display: flex;
-	
-}
+	}
 .btn-el,
 .btn-del {
 	padding: 5px 20px;
