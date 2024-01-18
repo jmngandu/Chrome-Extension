@@ -1,9 +1,10 @@
 {
-	"manifest_version": 3,
-	"version": "1.0",
-	"name": "jm saver",
-	"action": {
-		"default_popup": "index.html",
-		"default_icon": "jthree.jpg"
-	}
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "fine links",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    }
 }
+
