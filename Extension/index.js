@@ -45,4 +45,5 @@ const tabs = [
 ]
 btnSave.addEventListener("click", ()=>{
 myLinks.push(tabs[0].url)
+localStorage.setItem("myLinks", JSON.stringify("myLinks"))
 })
