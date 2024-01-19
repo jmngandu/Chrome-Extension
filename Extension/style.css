@@ -12,7 +12,7 @@ body {
 	display: flex;
 	}
 .btn-el,
-.btn-del {
+.btn-del ,.btn-saveTab{
 	padding: 5px 20px;
 	background-color: lightgreen;
 	border: none;
@@ -39,6 +39,12 @@ a {
 }
 .btn-del:hover {
 	background-color: crimson;
+}
+.btn-saveTab{
+background-color:greenyellow;
+}
+.btn-saveTab:hover{
+	background-color:deepskyblue;
 }
 .container {
 	display: flex;
