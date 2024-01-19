@@ -41,10 +41,6 @@ btnEL.addEventListener('click', () => {
 });
 
 
-const tabs = [
-    {url: "https://www.linkedin.com/in/per-harald-borgen/"}
-]
-
 btnSave.addEventListener("click", ()=>{
 
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
