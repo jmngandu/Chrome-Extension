@@ -24,6 +24,7 @@ body {
 .link-el {
 	margin: 10px;
 	padding: 5px 10px;
+	width: 100%;
 }
 li {
 	list-style-type: none;
@@ -31,8 +32,8 @@ li {
 }
 
 a {
-	color: black;
-	text-decoration: none;
+	color:mediumvioletred;
+	/* text-decoration: none; */
 }
 .btn-el:hover {
 	background-color: lightcoral;
