@@ -39,3 +39,10 @@ btnEL.addEventListener('click', () => {
 
 	render(myLinks);
 });
+
+const tabs = [
+    {url: "https://www.linkedin.com/in/per-harald-borgen/"}
+]
+btnSave.addEventListener("click", ()=>{
+console.log(tabs)
+})
